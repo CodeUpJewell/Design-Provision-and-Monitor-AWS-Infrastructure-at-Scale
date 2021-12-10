@@ -1,8 +1,8 @@
 # Creating IAM role so that Lambda service to assume the role and access other AWS services
 provider "aws" {
 region = "us-east-1"
-access_key = "AKIAXNYZRU3MHKJNMWA5"
-secret_key = "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"
+access_key = "xxxxxx"
+secret_key = "xxxxxx"
 }
 
 resource "aws_iam_role" "iam_for_lambda" {

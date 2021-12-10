@@ -1,9 +1,10 @@
-# TODO: Designate a cloud provider, region, and credentials
+# Creating IAM role so that Lambda service to assume the role and access other AWS services
 provider "aws" {
 region = "us-east-1"
 access_key = "AKIAXNYZRU3MHKJNMWA5"
 secret_key = "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"
 }
+
 resource "aws_iam_role" "iam_for_lambda" {
   name = "iam_for_lambda"
 
@@ -26,14 +27,19 @@ EOF
 
 resource "aws_lambda_function" "lambda" {
   function_name = "lambda_function_name_boboa_udacity"
-  role          = "aws_iam_role.iam_for_lambda.arn"
-  handler       = "greet_lambda.lambda_handler"
+  role          = "arn:aws:iam::510617822936:role/IamLambduht"
+  handler       = "lambda.lambda_handler"
   runtime = "python3.9"
   environment {
     variables = {
       foo = "bar"
     }
   }
+}
+resource "aws_cloudwatch_log_group" "lambdalogs" {
+  name = "/aws/lambda/lambda_function_name_boboa_udacity"
+  retention_in_days = 7
+}
 }
 
 resource "aws_cloudwatch_log_group" "lambdaLogs" {

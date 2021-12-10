@@ -1,0 +1,19 @@
+Group hierarchy	Region	Description	Service	Upfront	Monthly	First 12 months total	Currency	Configuration summary
+My Estimate	US East (Ohio)		Application Load Balancer	0	483.63	5803.56	USD	Number of Application Load Balancers (1)
+My Estimate	US East (Ohio)		Amazon CloudFront	0	216.04	2592.48	USD	Data transfer out to internet (2 TB per month), Data transfer out to origin (2 TB per month), Number of requests (HTTPS) (1000000 per month), Number of requests (HTTPS) ( per month)
+My Estimate	US East (Ohio)	MyUdacity1Vpc	Amazon Virtual Private Cloud (VPC)	0	110.7	1328.4	USD	Number of NAT Gateways (2)
+My Estimate	US East (Ohio)	Ec2-app-server	Amazon EC2	0	2196.54	26358.48	USD	Operating system (Linux), Quantity (6), Pricing strategy (EC2 Instance Savings Plans 1 Year No Upfront), Storage amount (500 GB), Instance type (m5a.4xlarge)
+My Estimate	US East (Ohio)	db-servers	Amazon RDS for MySQL	0	8152.7	97832.4	USD	Storage for each RDS instance (General Purpose SSD (gp2)), Storage amount (300 GB), Quantity (2), Instance type (db.m5.8xlarge), Utilization (On-Demand only) (100 %Utilized/Month), Deployment option (Multi-AZ), Pricing strategy (OnDemand), Additional backup storage (300 GB)
+My Estimate	US East (Ohio)	EC2-web-servers	Amazon EC2	0	5893.12	70717.44	USD	Operating system (Linux), Quantity (8), Pricing strategy (EC2 Instance Savings Plans 1 Year No Upfront), Storage amount (300 GB), Instance type (m5.8xlarge)
+My Estimate	US East (Ohio)	MyVPC	Amazon Virtual Private Cloud (VPC)	0	508	6096	USD	Working days per month (30), DT Inbound: Internet (10 TB per month), DT Outbound: Amazon CloudFront (10 TB per month), DT Intra-Region: (0 TB per month), Number of Site-to-Site VPN Connections (0), Number of subnet associations (4)
+My Estimate	US East (Ohio)	MyS3	S3 Standard	0	492.64	5911.68	USD	S3 Standard storage (20 TB per month)
+My Estimate	US East (Ohio)	MyS3	Data Transfer	0	0	0	USD	DT Inbound: Internet (10 TB per month), DT Outbound: Amazon CloudFront (10 TB per month)
+								
+								
+								
+Acknowledgement								
+* AWS Pricing Calculator provides only an estimate of your AWS fees and doesn't include any taxes that might apply. Your actual fees depend on a variety of factors, including your actual usage of AWS services.								
+								
+With the substantial increase in our budget, we've decided to increase our DB storage capacity to 300GB, aswell as increase our DB Instance type to (db.m5.8xlarge) from DB Instance type (db.m5.4xlarge) to handle an increase in capability to handle bigger server load.  								
+We've also increased our capacity on our s3 storage both inbound and outbound. Our web servers and application servers have seen a sizeable increases from m5.4xlarge and m5a.large, to a m5.8xlarge and m5a.4xlarge. This will allow us to handle a larger traffic size.								
+Our CloudFront capacity has been doubled and our ELB has been adjusted to handle an increase in connections.  								

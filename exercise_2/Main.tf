@@ -41,8 +41,3 @@ resource "aws_cloudwatch_log_group" "lambdalogs" {
   retention_in_days = 7
 }
 }
-
-resource "aws_cloudwatch_log_group" "lambdaLogs" {
-  name              = "/aws/lambda/lambda_function_name_boboa_udacity"
-  retention_in_days = 7
-}

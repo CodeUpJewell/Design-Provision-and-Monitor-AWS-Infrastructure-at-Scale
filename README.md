@@ -1,4 +1,4 @@
-# TerraformUdacityProject Design for Performance and Scalability
+# Project AWS & Terraform: Design, Provision, and Monitor AWS Infrastructure at Scale
 Project Instructions
 Exercise 1
 
@@ -25,3 +25,4 @@ Exercise 2
     Take a screenshot of the EC2 instances page
 
     Take a screenshot of the VPC page
+

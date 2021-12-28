@@ -1,5 +1,7 @@
 # Project AWS & Terraform: Design, Provision, and Monitor AWS Infrastructure at Scale
-Project Instructions
+
+This is the second major project in Udacity AWS Cloud Architect Nanodegree.
+
 Exercise 1
 
     Download the starter code.

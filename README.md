@@ -55,7 +55,8 @@ Project Files
     DynamoDB
     S3 Storage
     
-    
+List of estimates & how much it will cost to run the services in our Part 1 diagram for one month:
+
     Initial_Cost_Estimate.csv: Cost estimated using AWS Pricing Calculator for the architecture to run in AWS created in Udacity_Diagram_1.pdf.
     Targeted a monthly estimate between $8,000-$10,000.
     

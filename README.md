@@ -26,7 +26,7 @@ Exercise 2
 
     Take a screenshot of the VPC page
 
-Project Files
+AWS Architecture Schematics
 
     Udacity_Diagram_1.pdf: You have been asked to plan and provision a cost-effective AWS infrastructure for a new social media application development project for 50,000 single-region users. The project requires the following AWS infrastructure and services
     

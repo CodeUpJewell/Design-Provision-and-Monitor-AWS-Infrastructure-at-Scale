@@ -43,8 +43,8 @@ AWS Architecture Schematics
     Four Subnets (2 Public, 2 Private)
     A NAT Gateway
     A CloudFront distribution with an S3 bucket
-    Web servers in the Public Subnets sized according to your usage estimates
-    Application Servers in the Private Subnets sized according to your usage estimates
+    Web servers in the Public Subnets sized according to our usage estimates
+    Application Servers in the Private Subnets sized according to our usage estimates
     DB Servers in the Private Subnets
     Web Servers Load Balanced and Autoscaled
     Application Servers Load Balanced and Autoscaled
